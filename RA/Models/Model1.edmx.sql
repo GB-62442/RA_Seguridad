@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 11/28/2021 04:33:11
+-- Date Created: 11/28/2021 10:16:36
 -- Generated from EDMX file: C:\Users\T450s\source\repos\Seguridad_RA\RA\Models\Model1.edmx
 -- --------------------------------------------------
 
@@ -17,17 +17,14 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[FK_equipo_pokemon]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[equipo] DROP CONSTRAINT [FK_equipo_pokemon];
-GO
-IF OBJECT_ID(N'[dbo].[FK_equipo_usuario]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[equipo] DROP CONSTRAINT [FK_equipo_usuario];
-GO
 IF OBJECT_ID(N'[dbo].[FK_evolucion_pokemon]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[evolucion] DROP CONSTRAINT [FK_evolucion_pokemon];
 GO
 IF OBJECT_ID(N'[dbo].[FK_evolucion_tipo_evolucion]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[evolucion] DROP CONSTRAINT [FK_evolucion_tipo_evolucion];
+GO
+IF OBJECT_ID(N'[dbo].[FK_equipo_pokemon]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[equipo] DROP CONSTRAINT [FK_equipo_pokemon];
 GO
 IF OBJECT_ID(N'[dbo].[FK_tipopkmn_pokemon]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[tipopkmn] DROP CONSTRAINT [FK_tipopkmn_pokemon];
@@ -35,14 +32,14 @@ GO
 IF OBJECT_ID(N'[dbo].[FK_tipopkmn_tipo]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[tipopkmn] DROP CONSTRAINT [FK_tipopkmn_tipo];
 GO
+IF OBJECT_ID(N'[dbo].[FK_equipo_usuario]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[equipo] DROP CONSTRAINT [FK_equipo_usuario];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[equipo]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[equipo];
-GO
 IF OBJECT_ID(N'[dbo].[evolucion]', 'U') IS NOT NULL
     DROP TABLE [dbo].[evolucion];
 GO
@@ -63,6 +60,9 @@ IF OBJECT_ID(N'[dbo].[tipopkmn]', 'U') IS NOT NULL
 GO
 IF OBJECT_ID(N'[dbo].[usuario]', 'U') IS NOT NULL
     DROP TABLE [dbo].[usuario];
+GO
+IF OBJECT_ID(N'[dbo].[equipo]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[equipo];
 GO
 
 -- --------------------------------------------------
