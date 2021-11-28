@@ -12,6 +12,7 @@ using RA.Models;
 
 namespace RA.Controllers
 {
+    [Authorize]
     public class tipopkmnsController : ApiController
     {
         private seguridad_apiEntities db = new seguridad_apiEntities();

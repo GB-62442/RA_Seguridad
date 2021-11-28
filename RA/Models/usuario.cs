@@ -19,7 +19,7 @@ namespace RA.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public usuario()
         {
-            this.equipo = new HashSet<equipo>();
+            this.equipo = new HashSet<equipo>(); 
         }
     
         public int usuario_id { get; set; }

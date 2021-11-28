@@ -11,7 +11,7 @@ using System.Web.Http.Description;
 using RA.Models;
 
 namespace RA.Controllers
-{
+{[Authorize]
     public class pokemonsController : ApiController
     {
         private seguridad_apiEntities db = new seguridad_apiEntities();

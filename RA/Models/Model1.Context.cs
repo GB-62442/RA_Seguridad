@@ -32,6 +32,12 @@ namespace RA.Models
         public virtual DbSet<tipo_evolucion> tipo_evolucion { get; set; }
         public virtual DbSet<tipopkmn> tipopkmn { get; set; }
         public virtual DbSet<usuario> usuario { get; set; }
+
+        internal usuario ExecuteSelect(object p)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual DbSet<equipo> equipo { get; set; }
     }
 }
