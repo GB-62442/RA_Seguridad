@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b9a4b0974d444df9a619ddcb2d69c634" Name="Diagram1" ZoomLevel="31">
+        <EntityTypeShape EntityType="seguridad_apiModel.evolucion" Width="1.5" PointX="2.625" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="seguridad_apiModel.pokemon" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="seguridad_apiModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="seguridad_apiModel.tipo" Width="1.5" PointX="2.875" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="seguridad_apiModel.tipo_evolucion" Width="1.5" PointX="6.625" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="seguridad_apiModel.tipopkmn" Width="1.5" PointX="0.625" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="seguridad_apiModel.usuario" Width="1.5" PointX="10" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="seguridad_apiModel.equipo" Width="1.5" PointX="4.625" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="seguridad_apiModel.FK_evolucion_pokemon" ManuallyRouted="false" />
+        <AssociationConnector Association="seguridad_apiModel.FK_evolucion_tipo_evolucion" ManuallyRouted="false" />
+        <AssociationConnector Association="seguridad_apiModel.FK_equipo_pokemon" ManuallyRouted="false" />
+        <AssociationConnector Association="seguridad_apiModel.FK_tipopkmn_pokemon" ManuallyRouted="false" />
+        <AssociationConnector Association="seguridad_apiModel.FK_tipopkmn_tipo" ManuallyRouted="false" />
+        <AssociationConnector Association="seguridad_apiModel.FK_equipo_usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
