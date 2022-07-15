@@ -1,0 +1,8 @@
+RA - Seguridad
+Elaborar una aplicación para cualquier caso práctico que integre:
+- Algoritmos de cifrado simétrico
+- Algoritmos de cifrado asimétrico
+- certificados digitales
+- Algoritmos hash
+- Protocolos de seguridad
+Certificado Digital self-signed creado en Powershell
